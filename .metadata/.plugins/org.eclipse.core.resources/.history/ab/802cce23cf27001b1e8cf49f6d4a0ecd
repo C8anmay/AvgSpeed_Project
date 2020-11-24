@@ -1,0 +1,39 @@
+
+
+import java.util.Scanner;
+public class Program
+{
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+    
+        double a = in.nextDouble();
+             
+        char  o = in.next().charAt(0); 
+
+        double  b = in.nextDouble();
+       
+
+        System.out.print("Result: "+ a + " " + o + " " + b + " = "); 
+      
+      // This prints the result.
+       
+        if(o=='+'){System.out.print(a+b);}
+      else  if(o=='-'){System.out.print(a-b);}
+       else if(o=='*'){System.out.print(a*b);}
+      else  if(o=='/'){System.out.print(a/b);}
+      
+      /*This will print 'a' raised to the power 'b'.(use '^' to operate)*/
+      else if(o=='^'){
+      int p = 1;
+         for(int i=1; i<=b; i++){
+           p *= a;
+           } 
+           System.out.print(p);
+                     }
+      else{
+      System.out.println(" Error \n'" + o + "' is an illegal operator. Try +, -, *, /, ^.");
+          }
+         
+    }
+}

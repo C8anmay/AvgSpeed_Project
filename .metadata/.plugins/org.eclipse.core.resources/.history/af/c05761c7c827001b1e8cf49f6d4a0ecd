@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Calculator {
+
+
+	public static void main(String[] args) {
+	      System.out.print("Enter two floating point values : ");
+	      Scanner my_scan = new Scanner(System.in);
+	      double double_val = my_scan.nextFloat();
+	      int int_val = my_scan.nextInt();
+	      System.out.println("The floating point value is : " + double_val + " and the integer value is : "
+	      + int_val);
+	   }
+		
+}
+
+

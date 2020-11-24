@@ -1,0 +1,17 @@
+import java.util.List;
+import java.util.Scanner;
+import java.io.BufferedReader; 
+import java.io.IOException; 
+import java.io.InputStreamReader;
+
+class Eg1 {
+  public static void main(String[] args) throws IOException{
+	  Scanner sc=new Scanner(System.in);
+	  
+	  System.out.println("Enterusername:"+sc);
+	  
+	  
+	  int userInput=sc.nextInt();
+	  System.out.println("In"+userInput);
+  }
+}

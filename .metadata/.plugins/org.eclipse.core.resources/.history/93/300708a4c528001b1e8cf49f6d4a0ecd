@@ -1,0 +1,8 @@
+import java.util.Scanner;    //imports scanners
+
+public class Calc {
+    
+    public static void main(String[] args) {
+    	System.out.println((char)27 + "[33mYELLOW");
+    }
+}

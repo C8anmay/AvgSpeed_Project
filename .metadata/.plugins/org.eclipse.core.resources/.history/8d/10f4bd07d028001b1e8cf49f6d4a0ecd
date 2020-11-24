@@ -1,0 +1,9 @@
+import java.util.Scanner;    //imports scanners
+
+public class Calc {
+    
+    public static void main(String[] args) {
+    	System.out.println((char)27 + "[33mYELLOW");
+    	System.out.println("\033[31mRed\033[32m, Green\033[33m, Yellow\033[34m, Blue\033[0m");
+    }
+}

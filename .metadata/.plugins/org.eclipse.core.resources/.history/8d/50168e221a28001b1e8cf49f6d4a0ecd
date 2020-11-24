@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Eg1 {
+
+	public static void main(String[] args) {
+		 
+		Scanner sc = new Scanner(System.in);
+		  char operator = sc.next().charAt(0);
+
+		System.out.println("Give me a bunch of numbers in a line (or 'exit')");
+		while (!sc.hasNext(" \n")) {
+		    Scanner lineSc = new Scanner(sc.nextLine());
+		    double result = 0;
+		    while (lineSc.hasNextInt()) {
+		    	 switch(operator)
+		         {
+		             case '+':
+		            	 result += lineSc.nextInt();
+		                 break;
+
+		             case '-':
+		            	 result -= lineSc.nextInt();
+		                 break;
+
+		             case '*':
+		            	 result *= lineSc.nextInt();
+		                 break;
+
+		             case '/':
+		            	 result /= lineSc.nextInt();
+		                 break;
+
+		             /* If user enters any other operator or char apart from
+		              * +, -, * and /, then display an error message to user
+		              * 
+		              */
+		             default:
+		                 System.out.printf("You have entered wrong operator");
+		                 return;
+		         }
+		    	
+		        //result += lineSc.nextInt();
+		    	// System.out.println(+result+operator);
+		    }
+		    System.out.println("Result:" + result);
+		}
+	}
+
+}
+

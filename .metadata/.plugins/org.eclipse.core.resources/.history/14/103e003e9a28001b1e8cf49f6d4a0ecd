@@ -1,0 +1,93 @@
+import java.util.Scanner;
+
+public class Eg1 {
+
+	
+		 
+		public static double addition(double x, double y) // The Addition Operation
+		{
+		    double add = x + y;
+		    return add;
+		}
+
+		public static double subtraction(double x, double y) // The Subtraction Operation
+		{
+		    double sub = x - y;
+		    return sub;
+		}
+
+		public static double division(double x, double y) // The Devision Operation
+		{
+		    double div = x / y;
+		    return div;
+		}
+
+		public static double multiplication(double x, double y) // The Multiplication Operation
+		{
+		    double multi = x * y;
+		    return multi;
+		}
+
+		public static double factorial(double x) // The Factorial (F!)
+		{ 
+		    double result = 1;
+		    while (x > 1)
+		    {
+		        result = result * x;
+		        x = x - 1;
+		    }
+		    return result;
+		}
+
+		static Scanner scanner = new Scanner(System.in); // a Global Scanner.
+
+		public static void main(String[] args)
+		{
+		    double numb1, numb2;
+		    char operation;
+		    System.out.println("Enter Your Equation: ");
+
+		    // Split string by space
+		    String[] parts = scanner.nextLine().split("");
+
+		    // Convert to corresponding types
+		    operation = parts[1].charAt(0);
+
+		    switch (operation)
+		    {
+		        case '+':
+		            numb1 = Integer.parseInt(parts[0]);
+		            operation = parts[1].charAt(0);
+		            numb2 = Integer.parseInt(parts[2]);
+		            System.out.println("The Product is: " + addition(numb1, numb2));
+		            break;
+
+		        case '-':
+		            numb1 = Integer.parseInt(parts[0]);
+		            operation = parts[1].charAt(0);
+		            numb2 = Integer.parseInt(parts[2]);
+		            System.out.println("The Product is: " + subtraction(numb1, numb2));
+		            break;
+		        case '*':
+		            numb1 = Integer.parseInt(parts[0]);
+		            operation = parts[1].charAt(0);
+		            numb2 = Integer.parseInt(parts[2]);
+		            System.out.println("The Product is: " + multiplication(numb1, numb2));
+		            break;
+		        case '/':
+		            numb1 = Integer.parseInt(parts[0]);
+		            operation = parts[1].charAt(0);
+		            numb2 = Integer.parseInt(parts[2]);
+		            System.out.println("The Product is: " + division(numb1, numb2));
+		            break;
+		        case '!':
+		            numb1 = Integer.parseInt(parts[0]);
+		            operation = parts[1].charAt(0);
+		            System.out.println("The Product is: " + factorial(numb1));
+		    }
+		}
+		}
+	
+
+
+

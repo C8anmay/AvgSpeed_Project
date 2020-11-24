@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Eg1 {
+
+	public static void main(String[] args) {
+		 
+		Scanner sc = new Scanner(System.in);
+		char operator = sc.next().charAt(0);
+
+		System.out.println("Give me a bunch of numbers in a line (or 'exit')");
+		while (!sc.hasNext("exit")) {
+		    Scanner lineSc = new Scanner(sc.nextLine());
+		    int sum = 0;
+		    while (lineSc.hasNextInt()) {
+		      if(operator=='+') {
+		    	  sum+=lineSc.nextInt();
+		    	  System.out.println(+lineSc.nextInt()+ ""+operator+ "" +lineSc.nextInt());
+		      } else if(operator=='-') {
+		    	  sum-=lineSc.nextInt();
+		      }
+		      else System.out.println("Drr");
+		    	}
+		    }
+		    
+		}
+	}
+
+
+

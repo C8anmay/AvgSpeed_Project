@@ -1,0 +1,12 @@
+import java.util.List;
+import java.util.Scanner;
+import java.io.BufferedReader; 
+import java.io.IOException; 
+import java.io.InputStreamReader;
+
+class Eg1 {
+  public static void main(String[] args) throws IOException{
+	  int digitY=3+2*(2+2); 
+	  System.out.println("In"+digitY);
+  }
+}

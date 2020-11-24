@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Eg1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int i,n=0, s=0;
+double result;
+System.out.println("Start Calculation:");
+for (i=0;i<10;i++) {
+	Scanner in = new Scanner(System.in);
+	n=in.nextInt();
+	s+=n;
+}
+result=s;
+System.out.print("Expression " +s+"\n Result:" +result);
+	}
+
+}

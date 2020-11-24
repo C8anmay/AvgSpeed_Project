@@ -1,0 +1,144 @@
+
+
+import java.util.Scanner;
+public class Calc {
+
+public static void main(String[] args) {
+
+    Scanner scan = new Scanner(System.in);
+    System.out.println("welcome to your personal calculator. is your problem simple or advanced(multiple calculations)\n"
+            + "Type 1 for simple or 2 for advanced");
+    int choice = scan.nextInt();
+    if(choice == 1){
+        System.out.println("Simple equation");
+
+        System.out.println("Enter the first number");
+        int firstnum = scan.nextInt();
+        System.out.println("Enter the second number");
+        int secondnum = scan.nextInt();
+        System.out.println("are you adding, subtracting multiplying or dividing? ENTER +,*,-, or /");
+        String operand = scan.next();
+        if(operand.equals("+")){
+            int solution = firstnum + secondnum;
+            System.out.println(firstnum + operand + secondnum + "=" + solution);
+        }
+        else if (operand.equals("*")){
+            int solution = firstnum * secondnum;
+            System.out.println(firstnum + operand + secondnum + "=" + solution);
+        }
+        else if(operand.equals("-")){
+            int solution = firstnum - secondnum;
+            System.out.println(firstnum + operand + secondnum + "=" + solution);
+        }
+        else if(operand.equals("/")){
+            int solution = firstnum / secondnum;
+            System.out.println(firstnum + operand + secondnum + "=" + solution);
+        }
+        else{
+            System.out.println("Did not recognize operation type please restart program.");
+            return;
+        }
+
+        }
+
+    else if(choice == 2){
+        System.out.println("Advanced equation");
+        System.out.println("How many numbers are in your equation? max of 7\n"
+                + "operands are chosen by typing +,-,*,or /");
+        int numofnumbers = scan.nextInt();
+        if(numofnumbers == 2){
+            System.out.println("enter first num");
+            int firstnum = scan.nextInt();
+            System.out.println("enter second num");
+            int secondnum = scan.nextInt();
+            System.out.println("enter operand");
+            String operand = scan.next();
+            if(operand.equals("+")){
+                int solution = firstnum + secondnum;
+                System.out.println(firstnum + operand + secondnum + "=" + solution);
+            }
+            else if (operand.equals("*")){
+                int solution = firstnum * secondnum;
+                System.out.println(firstnum + operand + secondnum + "=" + solution);
+            }
+            else if(operand.equals("-")){
+                int solution = firstnum - secondnum;
+                System.out.println(firstnum + operand + secondnum + "=" + solution);
+            }
+            else if(operand.equals("/")){
+                int solution = firstnum / secondnum;
+                System.out.println(firstnum + operand + secondnum + "=" + solution);
+            }
+            else{
+                System.out.println("Did not recognize operation type please restart program.");
+                return;
+            }
+
+        }
+        else if(numofnumbers == 3){
+            System.out.println("enter first num");
+            int firstnum = scan.nextInt();
+            System.out.println("enter second num");
+            int secondnum = scan.nextInt();
+            System.out.println("enter thir num");
+            int thirdnum = scan.nextInt();
+        }
+        else if(numofnumbers == 4){
+            System.out.println("enter first num");
+            int firstnum = scan.nextInt();
+            System.out.println("enter second num");
+            int secondnum = scan.nextInt();
+            System.out.println("enter third num");
+            int thirdnum = scan.nextInt();
+            System.out.println("enter fourth num");
+            int fourthnum = scan.nextInt();
+        }
+        else if(numofnumbers == 5){
+            System.out.println("enter first num");
+            int firstnum = scan.nextInt();
+            System.out.println("enter second num");
+            int secondnum = scan.nextInt();
+            System.out.println("enter third num");
+            int thirdnum = scan.nextInt();
+            System.out.println("enter fourth num");
+            int fourthnum = scan.nextInt();
+            System.out.println("enter fifth num");
+            int fifthnum = scan.nextInt();
+        }
+        else if(numofnumbers == 6){
+            System.out.println("enter first num");
+            int firstnum = scan.nextInt();
+            System.out.println("enter second num");
+            int secondnum = scan.nextInt();
+            System.out.println("enter third num");
+            int thirdnum = scan.nextInt();
+            System.out.println("enter fourth num");
+            int fourthnum = scan.nextInt();
+            System.out.println("enter fifth num");
+            int fifthnum = scan.nextInt();
+            System.out.println("enter sixth num");
+            int sixthnum = scan.nextInt();
+        }
+        else if(numofnumbers == 7){
+            System.out.println("enter first num");
+            int firstnum = scan.nextInt();
+            System.out.println("enter second num");
+            int secondnum = scan.nextInt();
+            System.out.println("enter third num");
+            int thirdnum = scan.nextInt();
+            System.out.println("enter fourth num");
+            int fourthnum = scan.nextInt();
+            System.out.println("enter fifth num");
+            int fifthnum = scan.nextInt();
+            System.out.println("enter sixth num");
+            int sixthnum = scan.nextInt();
+            System.out.println("enter seventh num");
+            int seventhnum = scan.nextInt();
+        }
+    }
+    else{
+        System.out.println("you did not type one or two. please restart program.");
+        return;
+    }
+} }
+

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Eg1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Give me a bunch of numbers in a line (or 'exit')");
+		while (!sc.hasNext(" \n")) {
+		    Scanner lineSc = new Scanner(sc.nextLine());
+		    int result = 0;
+		    while (lineSc.hasNextInt()) {
+		    	
+		    	
+		        result += lineSc.nextInt();
+		    }
+		    System.out.println("Result:" + result);
+		}
+	}
+
+}
+

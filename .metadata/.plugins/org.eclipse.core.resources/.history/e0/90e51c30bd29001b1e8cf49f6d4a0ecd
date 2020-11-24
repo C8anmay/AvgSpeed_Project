@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+public class AppforCalc {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Calc calc = new Calc();
+        String reply = "yes";
+        String instructions = "Enter a mathematical expression. Separate everything with spaces";
+
+        while(reply.equalsIgnoreCase("yes"))
+        {
+            String expression = JOptionPane.showInputDialog(instructions);
+            String ans = calc.evaluate(expression);
+            reply = JOptionPane.showInputDialog("The solution is " + ans + "Try again?");
+        }
+
+	}
+
+}
